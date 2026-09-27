@@ -1,0 +1,53 @@
+{
+ "task": {
+  "id": "fresh-3",
+  "source": "fresh",
+  "question": "On what date did NASA launch the Artemis II lunar flyby mission?",
+  "answer": "1 April",
+  "evidence": "1 April – Artemis program: NASA launches the Artemis II lunar flyby mission from Launch Complex 39B at the Kennedy Space Center in Florida.",
+  "page": "2026 in science",
+  "url": "https://en.wikipedia.org/wiki/2026_in_science",
+  "agent_ok": false
+ },
+ "answer": "NASA launched the Artemis II lunar flyby mission on 1 April 2026. \n\nFINAL: 1 April 2026",
+ "correct": true,
+ "cost": 0.0002101999999999998,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2026. Never answer from memory: look facts up with the tools, do not repeat the same call. When done, write the last line as FINAL: <short answer>, or NOT_FOUND if the knowledge base has no answer."
+  },
+  {
+   "role": "user",
+   "content": "On what date did NASA launch the Artemis II lunar flyby mission?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_SCqD1PB6ARS4P1SJ1Y1x4v7U",
+     "function": {
+      "name": "rag_answer",
+      "arguments": "{\"question\":\"NASA Artemis II lunar flyby mission launch date\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_SCqD1PB6ARS4P1SJ1Y1x4v7U",
+   "content": "{'answer': 'The NASA Artemis II lunar flyby mission was launched on 1 April 2026 [1]. \\n\\nFINAL: 1 April 2026', 'hits': [{'page': '2026 in science', 'section': 'April', 'url': 'https://en.wikipedia.org/wiki/2026_in_science', 'text': \"1 April – Artemis program: NASA launches the Artemis II lunar flyby mission from Launch Complex 39B at the Kennedy Space Center in Florida, the first crewed flight beyond low Earth orbit since Apollo 17 in 1972. With a crew of four astronauts – Reid Wiseman (Commander) Victor Glover (Pilot), Christina Koch (Mission specialist), and Canadian astronaut Jeremy Hansen (Mission specialist) – it also becomes the first time a person of color, a woman, and a non-United States citizen have left low Earth orbit. It passed around the Moon's far side on April 6.\", 'id': 37, 'score': 0.6294}, {'page': '2026 in science', 'section': 'April', 'url': 'https://en.wikipedia.org/wiki/2026_in_science', 'text': '6 April – The crew of Artemis II breaks the record for the furthest humans have ever been from Earth, reaching a maximum distance of 252,757 miles (406,773 km) as they travel around the far side of the Moon.', 'id': 41, 'score': 0.4784}, {'page': '2026 in science', 'section': 'August', 'url': 'https://en.wikipedia.org/wiki/2026_in_science', 'text': \"30 August – NASA launches the flagship Nancy Grace Roman Space Telescope aboard a SpaceX Falcon Heavy rocket from the Kennedy Space Center in Florida. Designed to investigate dark energy, dark matter and exoplanets, the observatory has a field of view at least 100 times larger than the Hubble Space Telescope's, with comparable sensitivity and infrared resolution.\", 'id': 90, 'score': 0.4574}], 'cost': 6.780000000000002e-05}"
+  },
+  {
+   "role": "assistant",
+   "content": "NASA launched the Artemis II lunar flyby mission on 1 April 2026. \n\nFINAL: 1 April 2026",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

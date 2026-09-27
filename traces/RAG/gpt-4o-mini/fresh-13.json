@@ -1,0 +1,53 @@
+{
+ "task": {
+  "id": "fresh-13",
+  "source": "fresh",
+  "question": "What is the name of the fault-tolerant quantum computing design published on 12 February 2026?",
+  "answer": "Pinnacle Architecture",
+  "evidence": "Researchers at Iceberg Quantum publish a study describing the 'Pinnacle Architecture', a fault-tolerant quantum computing design based on quantum low-density parity-check (qLDPC) codes.",
+  "page": "2026 in science",
+  "url": "https://en.wikipedia.org/wiki/2026_in_science",
+  "agent_ok": false
+ },
+ "answer": "The fault-tolerant quantum computing design published on 12 February 2026 is called the \"Pinnacle Architecture.\" It is based on quantum low-density parity-check (qLDPC) codes. \n\nFINAL: Pinnacle Architecture",
+ "correct": true,
+ "cost": 0.00019139999999999956,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You answer questions about events of 2026. Never answer from memory: look facts up with the tools, do not repeat the same call. When done, write the last line as FINAL: <short answer>, or NOT_FOUND if the knowledge base has no answer."
+  },
+  {
+   "role": "user",
+   "content": "What is the name of the fault-tolerant quantum computing design published on 12 February 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_spIx0FnA0qtgATcdOrBtMVk0",
+     "function": {
+      "name": "rag_answer",
+      "arguments": "{\"question\":\"fault-tolerant quantum computing design published on 12 February 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_spIx0FnA0qtgATcdOrBtMVk0",
+   "content": "{'answer': 'NOT_FOUND.  \\nFINAL: NOT_FOUND', 'hits': [{'url': 'https://en.wikipedia.org/wiki/2026_in_science', 'text': 'Researchers at Iceberg Quantum publish a study describing the \"Pinnacle Architecture\", a fault-tolerant quantum computing design based on quantum low-density parity-check (qLDPC) codes. They show that a 2048-bit RSA integer could be factored with fewer than 100,000 physical qubits under standard hardware assumptions – an order-of-magnitude reduction compared to previous estimates.', 'page': '2026 in science', 'section': 'February', 'id': 20, 'score': 0.6825}, {'url': 'https://en.wikipedia.org/wiki/2026_in_science', 'text': '3 August – Researchers propose a theoretical method using quantum lattice gates to perform operations on bosonic quantum error-correcting codes within a single driving cycle, potentially making some operations more than 1,000 times faster than previous approaches and advancing efforts towards fault-tolerant quantum computing.', 'page': '2026 in science', 'section': 'August', 'id': 80, 'score': 0.6521}, {'url': 'https://en.wikipedia.org/wiki/2026_in_science', 'text': '18 March – Charles H. Bennett and Gilles Brassard are awarded the 2025 Turing Award for their work in quantum information science.', 'page': '2026 in science', 'section': 'March', 'id': 31, 'score': 0.4942}], 'cost': 4.425000000000002e-05}"
+  },
+  {
+   "role": "assistant",
+   "content": "The fault-tolerant quantum computing design published on 12 February 2026 is called the \"Pinnacle Architecture.\" It is based on quantum low-density parity-check (qLDPC) codes. \n\nFINAL: Pinnacle Architecture",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

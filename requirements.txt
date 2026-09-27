@@ -1,0 +1,8 @@
+requests
+pydantic
+python-dotenv
+pandas
+matplotlib
+numpy
+pymilvus==2.6.12
+pypdf
